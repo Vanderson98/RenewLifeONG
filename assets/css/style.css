@@ -1,0 +1,478 @@
+*{
+    user-select: none !important;
+}
+
+/* Menu Formatação */
+.boxParallax {
+    position: relative;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    background-color: #25252550; /* Cor de fundo com transparência */
+    background-image: url('../img/fotoParallax.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.boxParallax .img-fluid{
+    margin-top: -25%;
+    margin-bottom: -40%;
+    height: 150px;
+}
+
+.navbar{
+    align-items: center !important;
+    padding: .5rem;
+    width: 100%;;
+    background-color: none !important;
+}
+
+.logoONG{
+    margin:.5rem;
+}
+
+.nav-link{
+    text-transform: capitalize;
+    font-size: 1rem !important;
+    margin: 0 1rem !important;
+    color:#f6f6f6 !important;
+    font-weight: 500 !important;
+}
+
+@media(max-width:592px){
+    .navbar{
+        justify-content: center !important;
+    }
+
+    .navbar .nav{
+        width: 100%;
+        justify-content: space-between !important;
+        margin: 1rem auto;
+        margin-bottom: 0;
+    }
+
+    .nav-link{
+        margin: 0 !important;
+    }
+}
+
+/* Formatação frase motivacional */
+.titleONG{
+    display: flex;
+    top: 35%;
+    margin:0 3rem;
+    position: absolute;
+}
+
+.textTitle{
+    color:#f6f6f6;
+    width: 90vh;
+    letter-spacing: .1rem;
+    font-size: 1.6rem;
+}
+
+@media(max-width:992px){
+    .titleONG{
+        position: relative;
+        margin: 0;
+    }
+
+    .textTitle{
+        text-align: center;
+        margin: 0 .4rem !important;
+        font-size: 1.15rem;
+        width:  90vh !important;
+    }
+}
+
+@media(max-width:592px){
+    .titleONG{
+        top: 20%;
+    }
+}
+
+.waves{
+    margin-top: -19% !important; 
+    position: absolute;
+    width: 100%;
+}
+
+/* Formatação box 1 */
+.container{
+    max-width: 100% !important;
+}
+
+.contentPrincipal{
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.boxPrimary, .boxSecondary, .boxThird{
+    background-color: #4169E1;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    padding-bottom: 10%;
+    margin-top: 2%;
+    color:#f6f6f6;
+    justify-content: center;
+}
+
+.textBoxPrimary, .titleBoxSecondary, .textBoxThird{
+    font-size: 1.65rem;
+    text-align: center;
+    letter-spacing: .25rem;
+}
+
+.textBoxSecondary{
+    color:#00BFFF;
+    text-transform: uppercase;
+}
+
+.bar{
+    width: 25%;
+    margin: .5rem auto;
+    height: 2px;
+    background-color: #00BFFF;
+}
+
+.boxParagraph{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.boxImage{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    height: 20% !important;
+}
+
+.boxImage .img-fluid{
+    height: 10% !important;
+    border-radius: 20px;
+}
+
+@media(max-width:592px){
+    .textBoxPrimary,.titleBoxSecondary, .textBoxThird{
+        font-size: 1.2rem;
+    }
+
+    .boxImage{
+        width: 75%;
+    }
+}
+
+@media(min-width:1200px){
+    .boxParagraph{
+        width: 45% !important;
+    }
+}
+
+@media(min-width:992px){
+    .boxParagraph{
+        width: 75%;
+        font-size: 1.15rem;
+    }
+}
+
+/* Formatação box 2 */
+.boxSecondary, .boxThird, .boxFour, .rodape{
+    background-color: #f6f6f6;
+    position: relative;
+    color:#252525;
+    margin-top: .5rem;
+    padding-bottom:15%;
+}
+
+.wavesContent{
+    margin-top: -15% !important;
+}
+
+.titleBoxSecondary{
+    text-align: center;
+    color:#4169E1;
+}
+
+.titleBoxSecondary span{
+    text-transform: capitalize;
+}
+
+.informationServices{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.informationBox2{
+    flex-direction: row-reverse;
+}
+
+.marginInformation{
+    margin-top: 1.5rem !important;
+}
+
+.barInformation{
+    margin: 2rem auto;
+    background-color: #122353;
+    opacity: .5;
+    width: 10%;
+}
+
+.titleInformation, .thirdInformation .textThird, .textBoxFour, .titleInformationFour{
+    font-size: 1.7rem;
+    letter-spacing: .15rem;
+    color: #2dacd6;
+}
+
+.paragraphInformation, .thirdInformation .texts .paragraphThird, .paragraphInformationFour{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #122353;
+}
+
+.imageInformation{
+    margin: 0 1rem;
+}
+
+.texts, .imageInformation{
+    width: 50%;
+}
+
+.img-fluid{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+@media(max-width:992px){
+    .informationServices{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .texts,.imageInformation{
+        width: 100%;
+    }
+
+    .titleInformation, .thirdInformation .textThird, .textBoxFour, .titleInformationFour{
+        font-size: 1.2rem;
+    }
+
+    .paragraphInformation, .thirdInformation .texts .paragraphThird, .paragraphInformationFour{
+        font-size: .9rem;
+    }
+}
+
+/* Formtação box 3 */
+.wavesContent2{
+    margin-top: -20% !important;
+}
+
+.boxThird{
+    margin-top: .3rem;
+    background-color: #2dacd6;
+    color: #f6f6f6;
+}
+
+.textBoxThird{
+    text-align: center;
+}
+
+.textBoxThird span{
+    text-transform: capitalize;
+}
+
+.boxThird .bar{
+    background-color: #10204e;
+}
+
+.thirdInformation{
+    width: 90%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.thirdInformation .textThird{
+    color: #10204e;
+}
+
+.thirdInformation .texts{
+    width: 75%;
+    margin: 0 2rem;
+}
+
+.thirdInformation .texts .paragraphThird{
+    color: #f6f6f6;
+}
+
+@media(max-width:592px){
+    .thirdInformation{
+        flex-direction: column;
+    }
+
+    .thirdInformation .texts{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Formatação box 4 */
+.wavesContent3{
+    margin-top: -15% !important;
+}
+
+.boxFour{
+    margin-top: -1% !important;
+}
+
+.boxFour .bar{
+    background-color: #4169E1;
+}
+
+.textBoxFour{
+    text-align: center;
+    color: #2dacd6;
+    text-transform: capitalize;
+}
+
+.boxFour .boxInformation{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.boxInformation2{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.titleInformationFour{
+    color: #2dacd6;
+    text-transform: capitalize;
+}
+
+.boxFour .barInformation{
+    margin: 2rem auto;
+}
+
+.textDiretivo{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.textDiretivo span{
+    text-transform: capitalize;
+}
+
+.informationDiretivo ul .textDiretivo{
+    font-size: 1.2rem;
+}
+
+.box3{
+    align-items: end !important;
+}
+
+
+@media(max-width:592px){
+    .boxFour .boxInformation{
+        width: 90%;
+    }
+
+    .textDiretivo{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .informationDiretivo ul .textDiretivo{
+        font-size: .8rem;
+        text-align: start;
+    }
+}
+
+/* Formatação rodape */
+.rodape{
+    background-color: #0083f0;
+    padding: 0 1.5rem !important;
+    margin: 0 !important;
+    display: flex;
+    margin-top: -8% !important;
+    align-items: center !important;
+    flex-direction: column;
+}
+
+.rodape h3{
+    margin: 0 !important;
+}
+
+.imageLogoRodape{
+    width: 300px;
+    margin: 0 -40px;
+}
+
+.imageLogoRodape .img-fluid{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+#copy{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-bottom: -.8rem;
+}
+
+#copy h4{
+    font-size: 12px;   
+    padding: .5rem;
+    border-top-left-radius: .5rem;
+    background-color: #252525;
+    color:#A9A9A9;
+}
+
+#ano{
+	margin:5px;
+}
+
+.textRodape{
+    width: 50%;
+    margin-top: -3rem !important;
+    padding-bottom: 2.5rem;
+}
+
+.textRodape h3{
+    font-size: 1.2rem;
+    text-align: center;
+    color:#f6f6f6;
+}
+
+.textRodape span{
+    text-transform: capitalize;
+}
+
+@media(max-width:592px){
+    .rodape{
+        padding: 0 1rem !important;
+    }
+
+    .textRodape{
+        width: 100%;
+    }
+    .textRodape h3{
+        font-size: .9rem;
+    }
+}
